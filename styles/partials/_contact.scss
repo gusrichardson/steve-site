@@ -2,4 +2,18 @@
     height: 200px;
     background: $black;
     text-align: center;
+    padding-top: 40px;
+}
+
+#contact-social a {
+    background: none;
+}
+
+#contact-social li {
+    margin-top: 20px;
+    display: inline-block;
+}
+
+#contact-social i {
+    font-size: 3rem;
 }

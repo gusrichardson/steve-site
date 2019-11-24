@@ -564,7 +564,7 @@ header h2 {
 }
 
 #cell-4 {
-  background: url(../../images/piano.jpeg);
+  background: url(../images/piano.jpeg);
 }
 
 #cell-5 {
@@ -612,5 +612,26 @@ header h2 {
   height: 200px;
   background: #18181e;
   text-align: center;
+  padding-top: 40px;
+}
+
+#contact-social a {
+  background: none;
+}
+
+#contact-social li {
+  margin-top: 20px;
+  display: inline-block;
+}
+
+#contact-social i {
+  font-size: 3rem;
+}
+
+footer {
+  padding-top: 10px;
+  height: 50px;
+  text-align: center;
+  background: #f8f8ff;
 }
 /*# sourceMappingURL=style.css.map */
