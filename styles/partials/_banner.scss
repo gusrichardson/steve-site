@@ -1,11 +1,15 @@
-header {
-    text-align: center;
-}
 
-header {
+
+#header {
+      text-align: center;
     //BLACK DOORWAY
     background-image: url(../images/black-entrance-cropped.jpg);
     background-position: 0% 80%;
+    // background-attachment: fixed;
+    height: 1100px;
+    position: relative;
+    z-index: 10;
+    background-attachment: fixed;
 
     //WINDOW
     // background-image: url(../../images/window.jpg);
@@ -22,10 +26,12 @@ header {
     // background-position: 90% 100%;
     // background-attachment: fixed;
     // filter: grayscale(100%);
+    // border-bottom: 2px solid $white;
+    box-shadow: 0px 4px 10px -4px rgba(65, 64, 66, .5);
 }
 
-header h2 {
-    color: white;
+#header h2 {
+    color: $white;
 }
 
 #banner-logo {
@@ -64,7 +70,7 @@ header h2 {
     cursor: pointer;
 }
 
-#album-title {
+#header #album-title {
     font-size: 2.5rem;
     font-style: italic;
     color: $highlight;
@@ -75,13 +81,13 @@ header h2 {
     // color: $highlight;
 }
 
-.jaded-background {
-    height: 140px;
-    background-image: url(../../images/more-jaded.png);
-    background-size: 2000px 100px;
-    background-repeat: no-repeat;
-    background-position: bottom;
-}
+// .jaded-background {
+//     height: 140px;
+//     background-image: url(../../images/more-jaded.png);
+//     background-size: 2000px 100px;
+//     background-repeat: no-repeat;
+//     background-position: bottom;
+// }
 
 @media (max-width: #{$final-width}){
     #banner-img {
