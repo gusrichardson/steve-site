@@ -4,6 +4,9 @@
 //     background-position: 10% 40%;
 //     filter: grayscale(100%);
 // }
+html {
+    scroll-behavior: smooth;
+}
 
 h1, h2, h3, h4, p, li, ul {
     padding: 0px;
@@ -67,6 +70,7 @@ img {
     display: block;
     width: 100%;
 }
+
 
 @media (max-width: #{$mobile}){
     .wrapper {

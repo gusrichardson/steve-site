@@ -1,5 +1,6 @@
 #reveal-placeholder {
     height: 700px;
+    background: $black;
 }
 
 #album-container {
@@ -7,10 +8,9 @@
     // height: 100vh;
     background: $black;
     padding-top: 20px;
-    height: 700px;
+    height: 710px;
     position:fixed;
-    bottom:0;
-
+    bottom: 10px;
 }
 
 #table {
@@ -90,4 +90,12 @@
 #cell-9 {
     background: url(../images/jam-session.jpeg);
 }
+
+@media (max-width: #{$tablet}){
+    #table .cell {
+        width: 50%;
+        height: 25%;
+    }
+}
+
 
