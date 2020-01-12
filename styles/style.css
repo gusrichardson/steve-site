@@ -325,7 +325,7 @@ html {
 h1, h2, h3, h4, p, li, ul {
   padding: 0px;
   margin: 0px;
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Permanent Marker', cursive;
 }
 
 a {
@@ -394,15 +394,19 @@ img {
 
 #header {
   text-align: center;
-  background-image: url(../images/black-entrance-cropped.jpg);
-  background-position: 0% 80%;
+  background-image: url(../images/casette.jpeg);
   height: 1100px;
   position: relative;
   z-index: 10;
   background-attachment: fixed;
   background-size: cover;
-  -webkit-box-shadow: 0px 4px 10px -4px rgba(65, 64, 66, 0.5);
-          box-shadow: 0px 4px 10px -4px rgba(65, 64, 66, 0.5);
+  -webkit-box-shadow: 0px 4px 10px -4px rgba(65, 64, 66, 0.9);
+          box-shadow: 0px 4px 10px -4px rgba(65, 64, 66, 0.9);
+}
+
+#dark {
+  background: linear-gradient(rgba(0, 0, 0, 0.7) calc(100% - 2px), white 2px);
+  height: 100%;
 }
 
 #header h2 {
@@ -435,6 +439,7 @@ img {
   background: rgba(0, 0, 0, 0.5);
   position: absolute;
   top: 0;
+  left: 0;
   padding-top: 80px;
   -webkit-transition: all .2s;
   transition: all .2s;
