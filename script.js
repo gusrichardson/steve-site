@@ -1,7 +1,28 @@
-// console.log("hello");
+$(document).ready(function () {
 
-// const albumLink = document.getElementById('album-link');
+    $(window).scroll(function () {
+        $('.hide-me').each(function (i) {
+            var bottom_of_object = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            if (bottom_of_window > bottom_of_object) {
+                $(this).addClass('show-me');
+            }
+            if (bottom_of_window < bottom_of_object) {
+                $(this).removeClass('show-me');
+            }
+        });
+    });
 
-// albumLink.addEventListener("click", function () {
-//     window.scrollBy(0, -800)
-// })
+    $('#burger-menu').click(function () {
+        $('#navigation-menu').css({
+            width: "100%"
+        })
+    })
+
+    $('#navigation-menu li').click(function () {
+        $('#navigation-menu').css({
+            width: "0"
+        })
+    })
+});
+

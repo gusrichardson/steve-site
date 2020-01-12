@@ -18,12 +18,18 @@
         <div id="header">
             <div id="dark">
                 <div id="nav-bar">
+                    <div id="burger-menu">
+                        <div class="burger-bar one"></div>
+                        <div class="burger-bar two"></div>
+                        <div class="burger-bar three"></div>
+                    </div>
                     <nav id="navigation-menu">
                         <ul>
                             <li><a href="#">home</a></li>
                             <li><a href="#album-anchor">album</a></li>
                             <li><a href="#video">video</a></li>
                             <li><a href="#contact">contact</a></li>
+                            <li id="mobile-only"><button>X</button></li>
                         </ul>
                     </nav>
                     <div class="social nav-social">
@@ -35,7 +41,7 @@
                     </div>
                 </div>
                 <img id="banner-logo" src="images/ooc-solid-white.png" alt="Off Of Commission logo">
-                <h2 id="album-title">If These Walls Could Speak</h2>
+                <h2 id="album-title" class="hide-me">If These Walls Could Speak</h2>
                 <h2 class="call-to-action">Out now!</h2>
                 <div class="album-overlay">
                     <img id="album-cover" src="images/new-album-cover.jpg" alt="album cover">
@@ -178,8 +184,8 @@
         </div>
         <div id="contact">
             <img id="contact-logo" src="images/ooc-solid-white.png" alt="Off Of Commission logo">
-            <h1>Let's connect</h1>
-            <div id="contact-social">
+            <h1 class="hide-me">Let's connect</h1>
+            <div id="contact-social" class="hide-me">
                 <ul>
                     <li><a href="https://www.instagram.com/offofcommission/" target="_blank"><i
                                 class="fab fa-instagram"></i></a></li>
@@ -191,6 +197,8 @@
     <footer>
         <h2>Copyright © 2019</h2>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="script.js"></script>
 </body>
 

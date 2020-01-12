@@ -73,6 +73,24 @@ img {
 }
 
 
+.hide-me
+{
+    opacity:0;
+    transition: all 2s ease;
+}
+
+.show-me {
+  opacity:1!important;
+   transition: all 2s ease;
+}
+
+@media (max-width: #{$tablet}){
+    li:hover a {
+    background-size: 2px 60px;
+    color: $highlight;
+}
+}
+
 @media (max-width: #{$mobile}){
     .wrapper {
         max-width: calc(100% - 8px);
