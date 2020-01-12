@@ -95,6 +95,9 @@ img {
     .wrapper {
         max-width: calc(100% - 8px);
     }
+    p {
+        font-size: .9rem;
+    }
 }
 
 @media (max-width: #{$final-width}){
