@@ -19,10 +19,12 @@ $(document).ready(function () {
         })
     })
 
-    $('#navigation-menu li').click(function () {
-        $('#navigation-menu').css({
-            width: "0"
+    if ($(window).width() < 800) {
+        $('#navigation-menu li').click(function () {
+            $('#navigation-menu').css({
+                width: "0"
+            })
         })
-    })
+    }
 });
 

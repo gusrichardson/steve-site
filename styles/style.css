@@ -417,7 +417,7 @@ img {
 #header {
   text-align: center;
   background-image: url(../images/casette.jpeg);
-  height: 1100px;
+  height: 140vh;
   position: relative;
   z-index: 10;
   background-attachment: fixed;
@@ -438,7 +438,7 @@ img {
 #banner-logo {
   margin: 0 auto;
   width: 700px;
-  padding-top: 400px;
+  padding-top: 50vh;
 }
 
 .album-overlay {
@@ -627,7 +627,7 @@ img {
 }
 
 #reveal-placeholder {
-  height: 700px;
+  height: 70vh;
   background: #18181e;
 }
 
@@ -635,7 +635,7 @@ img {
   width: 100%;
   background: #18181e;
   padding-top: 20px;
-  height: 710px;
+  height: 100vh;
   position: fixed;
   bottom: 10px;
 }

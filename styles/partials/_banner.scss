@@ -5,7 +5,8 @@
       background-image: url(../images/casette.jpeg);
     // background-image: url(../images/black-entrance-cropped.jpg);
     // background-position: 0% 80%;
-    height: 1100px;
+    // height: 1100px;
+    height: 140vh;
     position: relative;
     z-index: 10;
     background-attachment: fixed;
@@ -25,7 +26,8 @@
 #banner-logo {
     margin: 0 auto;
     width: 700px;
-    padding-top: 400px;
+    padding-top: 50vh;
+    // padding-top: 400px;
     // visibility: hidden;
 }
 
