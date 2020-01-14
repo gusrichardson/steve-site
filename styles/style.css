@@ -328,7 +328,7 @@ h1, h2, h3, h4, p, li, ul {
   font-family: 'Permanent Marker', cursive;
 }
 
-a {
+a, h3 {
   color: #f8f8ff;
 }
 
@@ -444,6 +444,10 @@ img {
   position: relative;
 }
 
+.album-overlay h3 {
+  color: #f8f8ff;
+}
+
 #album-cover {
   max-width: 100%;
   max-height: 100%;
@@ -474,6 +478,10 @@ img {
   font-style: italic;
   color: #dec79b;
   margin-top: -15px;
+}
+
+.call-to-action {
+  font-size: 1.4rem;
 }
 
 #album-anchor {

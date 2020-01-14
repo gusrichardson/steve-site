@@ -3,9 +3,6 @@
 #header {
       text-align: center;
       background-image: url(../images/casette.jpeg);
-    // background-image: url(../images/black-entrance-cropped.jpg);
-    // background-position: 0% 80%;
-    // height: 1100px;
     height: 143vh;
     position: relative;
     z-index: 10;
@@ -18,10 +15,6 @@
     background: linear-gradient(rgba(0,0,0,0.7) calc(100% - 2px), white 2px);
     height: 100%;
 }
-
-// #header h2 {
-//     color: $white;
-// }
 
 #banner-logo {
     margin: 0 auto;
@@ -36,6 +29,10 @@
     height: 200px;
     margin: 10px auto;
     position: relative;
+}
+
+.album-overlay h3 {
+    color: $white;
 }
 
 #album-cover {
@@ -70,22 +67,13 @@
 }
 
 .call-to-action {
-    // font-style: italic;
-    // color: $highlight;
+   font-size: 1.4rem;
 }
 
 #album-anchor {
     position: absolute;
     bottom: 0;
 }
-
-// .jaded-background {
-//     height: 140px;
-//     background-image: url(../../images/more-jaded.png);
-//     background-size: 2000px 100px;
-//     background-repeat: no-repeat;
-//     background-position: bottom;
-// }
 
 @media (max-width: #{$tablet}){
    #banner-logo {
