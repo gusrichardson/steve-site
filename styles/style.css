@@ -403,7 +403,7 @@ img {
   .wrapper {
     max-width: calc(100% - 8px);
   }
-  p {
+  h1, h2, h3, p {
     font-size: .9rem;
   }
 }
@@ -417,7 +417,7 @@ img {
 #header {
   text-align: center;
   background-image: url(../images/casette.jpeg);
-  height: 140vh;
+  height: 143vh;
   position: relative;
   z-index: 10;
   background-attachment: fixed;
@@ -431,14 +431,10 @@ img {
   height: 100%;
 }
 
-#header h2 {
-  color: #f8f8ff;
-}
-
 #banner-logo {
   margin: 0 auto;
   width: 700px;
-  padding-top: 50vh;
+  padding-top: 55vh;
 }
 
 .album-overlay {
@@ -477,6 +473,7 @@ img {
   font-size: 2.5rem;
   font-style: italic;
   color: #dec79b;
+  margin-top: -15px;
 }
 
 #album-anchor {
@@ -511,7 +508,8 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 40px;
+  min-height: 40px;
+  padding: 3px 0 5px;
   width: 100%;
   position: fixed;
   z-index: 20;
@@ -539,7 +537,7 @@ img {
 .nav-social {
   text-align: right;
   padding-right: 40px;
-  padding-top: 5px;
+  padding-top: 7px;
 }
 
 #burger-menu {

@@ -5,7 +5,8 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     // background: linear-gradient($black 65px, $white 2px);
     display: flex;
     justify-content: space-between;
-    height: 40px;
+    min-height: 40px;
+    padding: 3px 0 5px;
     width: 100%;
     position: fixed;
     z-index: 20;
@@ -34,7 +35,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 .nav-social {
     text-align: right;
     padding-right: 40px;
-    padding-top: 5px;
+    padding-top: 7px;
 }
 
 #burger-menu {
