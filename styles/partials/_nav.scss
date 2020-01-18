@@ -123,7 +123,16 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 @media (max-width: #{$mobile}) {
     #nav-bar {
     border: 3px solid purple;
-    max-width: 100% !important;
+    max-width: 95% !important;
+    }
+    #burger-menu {
+        border: 2px solid yellow;
+    }
+    .nav-social {
+        border: 2px solid yellow;
+    }
+    .nav-social i {
+        border: 2px solid pink;
     }
 }
 
