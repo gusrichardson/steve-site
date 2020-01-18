@@ -509,6 +509,9 @@ img {
     width: 300px;
     border: 1px solid pink;
   }
+  .hide-me {
+    border: 1px solid blue;
+  }
 }
 
 #nav-bar {
@@ -765,7 +768,6 @@ img {
   /* 16:9 */
   padding-top: 25px;
   height: 400px;
-  border: 6px solid #18181e;
 }
 
 .video-wrapper iframe {
@@ -774,6 +776,12 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
+}
+
+@media (max-width: 500px) {
+  iframe {
+    border: 1px solid red;
+  }
 }
 
 #contact {
@@ -812,6 +820,12 @@ img {
 @media (max-width: 500px) {
   #contact-logo {
     width: 300px;
+  }
+  #also-available {
+    border: 1px solid pink;
+  }
+  #contact-logo {
+    border: 1px solid green;
   }
 }
 
