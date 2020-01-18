@@ -123,6 +123,7 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 @media (max-width: #{$mobile}) {
     #nav-bar {
     border: 3px solid red;
+    max-width: 100% !important;
     }
 }
 

@@ -646,6 +646,7 @@ img {
 @media (max-width: 500px) {
   #nav-bar {
     border: 3px solid red;
+    max-width: 100% !important;
   }
 }
 
