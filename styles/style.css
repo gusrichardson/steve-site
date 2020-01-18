@@ -650,6 +650,9 @@ img {
     border: 3px solid purple;
     max-width: 95% !important;
   }
+  #navigation-menu li {
+    margin: 0;
+  }
   #burger-menu {
     border: 2px solid yellow;
   }
