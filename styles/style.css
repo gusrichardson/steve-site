@@ -320,6 +320,7 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 
 html {
   scroll-behavior: smooth;
+  max-width: 100% !important;
 }
 
 h1, h2, h3, h4, p, li, ul {

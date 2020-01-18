@@ -8,6 +8,17 @@ function init() {
 }
 window.onload = init;
 
+var docWidth = document.documentElement.offsetWidth;
+
+[].forEach.call(
+    document.querySelectorAll('*'),
+    function (el) {
+        if (el.offsetWidth > docWidth) {
+            console.log(el, "this is el");
+        }
+    }
+);
+
 $(document).ready(function () {
 
     //defer parsing of javascript on youtube video
