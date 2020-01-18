@@ -643,6 +643,12 @@ img {
   }
 }
 
+@media (max-width: 500px) {
+  #nav-bar {
+    border: 3px solid red;
+  }
+}
+
 #reveal-placeholder {
   height: 70vh;
   background: #18181e;
