@@ -8,6 +8,8 @@
     padding-top: 25px;
     height: 400px;
     // border: 6px solid $black;
+    max-width: 100% !important;
+    border: 2px solid green;
 }
 .video-wrapper iframe {
     position: absolute;
