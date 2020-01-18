@@ -513,7 +513,7 @@ img {
 @media (max-width: 500px) {
   #banner-logo {
     width: 350px;
-    border: 2px solid red;
+    border: 2px solid purple;
   }
 }
 
