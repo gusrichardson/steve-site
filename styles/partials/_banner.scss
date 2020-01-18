@@ -83,12 +83,14 @@
 }
   #header #album-title {
         font-size: 1.7rem;
+        border: 2px solid yellow;
     }
 }
 
 @media (max-width: #{$mobile}){
    #banner-logo {
     width: 400px;
+    border: 2px solid red;
 }
 }
 
