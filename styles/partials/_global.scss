@@ -62,9 +62,10 @@ i {
 }
 
 .wrapper {
-    width: 800px;
+    width: 790px;
     margin: 0 auto;
-    border: 2px solid $black;
+    border: 2px solid green;
+    padding: 0 2px;
 }
 
 img {
@@ -85,6 +86,9 @@ img {
 }
 
 @media (max-width: #{$tablet}){
+     .wrapper {
+        max-width: calc(100% - 8px);
+    }
     li:hover a {
     background-size: 2px 60px;
     color: $highlight;
@@ -92,9 +96,9 @@ img {
 }
 
 @media (max-width: #{$mobile}){
-    .wrapper {
-        max-width: calc(100% - 8px);
-    }
+    // .wrapper {
+    //     max-width: calc(100% - 8px);
+    // }
      h1, h2, h3 {
         font-size: .7rem;
     }

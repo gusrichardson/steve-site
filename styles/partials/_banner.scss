@@ -79,6 +79,9 @@
    #banner-logo {
     width: 500px;
 }
+  #header #album-title {
+        font-size: 1.7rem;
+    }
 }
 
 @media (max-width: #{$mobile}){
@@ -88,6 +91,7 @@
 }
 
 @media (max-width: #{$final-width}){
+
     #banner-logo {
         width: 300px;
         border: 1px solid pink;

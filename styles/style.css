@@ -370,9 +370,10 @@ i {
 }
 
 .wrapper {
-  width: 800px;
+  width: 790px;
   margin: 0 auto;
-  border: 2px solid #18181e;
+  border: 2px solid green;
+  padding: 0 2px;
 }
 
 img {
@@ -393,6 +394,9 @@ img {
 }
 
 @media (max-width: 800px) {
+  .wrapper {
+    max-width: calc(100% - 8px);
+  }
   li:hover a {
     background-size: 2px 60px;
     color: #dec79b;
@@ -400,9 +404,6 @@ img {
 }
 
 @media (max-width: 500px) {
-  .wrapper {
-    max-width: calc(100% - 8px);
-  }
   h1, h2, h3 {
     font-size: .7rem;
   }
@@ -495,6 +496,9 @@ img {
 @media (max-width: 800px) {
   #banner-logo {
     width: 500px;
+  }
+  #header #album-title {
+    font-size: 1.7rem;
   }
 }
 
