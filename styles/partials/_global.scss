@@ -95,7 +95,10 @@ img {
     .wrapper {
         max-width: calc(100% - 8px);
     }
-     h1, h2, h3, p {
+     h1, h2, h3 {
+        font-size: .7rem;
+    }
+    p {
         font-size: .9rem;
     }
 }
