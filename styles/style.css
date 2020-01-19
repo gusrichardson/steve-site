@@ -610,6 +610,9 @@ img {
     background: #18181e;
     overflow-x: hidden;
   }
+  .nav-social {
+    padding-right: 10px;
+  }
   #mobile-only {
     display: block;
   }

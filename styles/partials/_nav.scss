@@ -89,6 +89,9 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
        background: $black;
        overflow-x:hidden;
    }
+   .nav-social {
+       padding-right: 10px;
+   }
    #mobile-only {
        display: block;
    }
