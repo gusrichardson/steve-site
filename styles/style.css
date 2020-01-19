@@ -660,9 +660,6 @@ img {
 #reveal-placeholder {
   height: 70vh;
   background: #18181e;
-  max-width: 100% !important;
-  border: 4px solid yellow;
-  background: yellow;
 }
 
 #album-container {
