@@ -828,4 +828,10 @@ footer {
   background: #f8f8ff;
   position: relative;
 }
+
+@media (max-width: 500px) {
+  footer h2 {
+    font-size: 1rem;
+  }
+}
 /*# sourceMappingURL=style.css.map */

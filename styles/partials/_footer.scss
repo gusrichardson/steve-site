@@ -6,3 +6,9 @@ footer {
     position: relative;
     
 }
+
+@media (max-width: #{$mobile}){
+   footer h2 {
+       font-size: 1rem;
+   }
+}
