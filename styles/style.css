@@ -766,8 +766,6 @@ img {
   /* 16:9 */
   padding-top: 25px;
   height: 400px;
-  max-width: 100% !important;
-  border: 2px solid green;
 }
 
 .video-wrapper iframe {
@@ -776,12 +774,6 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-}
-
-@media (max-width: 500px) {
-  iframe {
-    border: 1px solid red;
-  }
 }
 
 #contact {
