@@ -821,12 +821,6 @@ img {
   #contact-logo {
     width: 300px;
   }
-  #also-available {
-    border: 1px solid pink;
-  }
-  #contact-logo {
-    border: 1px solid green;
-  }
 }
 
 footer {
