@@ -6,12 +6,12 @@
 // }
 html {
     scroll-behavior: smooth;
-    max-width: 100% !important;
+    // max-width: 100% !important;
 }
 
-body {
-    max-width: 100% !important;
-}
+// body {
+//     max-width: 100% !important;
+// }
 
 h1, h2, h3, h4, p, li, ul {
     padding: 0px;
@@ -69,7 +69,7 @@ i {
 .wrapper {
     width: 790px;
     margin: 0 auto;
-    border: 2px solid green;
+    // border: 2px solid green;
     padding: 0 2px;
 }
 
