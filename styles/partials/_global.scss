@@ -1,22 +1,11 @@
-// html {
-//     background: url(../../images/subway.jpg);
-//     background-size: cover;
-//     background-position: 10% 40%;
-//     filter: grayscale(100%);
-// }
+
 html {
     scroll-behavior: smooth;
-    // max-width: 100% !important;
 }
-
-// body {
-//     max-width: 100% !important;
-// }
 
 h1, h2, h3, h4, p, li, ul {
     padding: 0px;
     margin: 0px;
-//    font-family: 'Bebas Neue', cursive;
    font-family: 'Permanent Marker', cursive;
 }
 
@@ -28,7 +17,6 @@ li a {
     text-decoration: none;
     font-size: 125%;
     padding: 0 5px;
-    //linear gradient, from top to bottom $highlight
     background: linear-gradient(
        to bottom, $highlight  0%,
        $highlight 100%
@@ -69,7 +57,6 @@ i {
 .wrapper {
     width: 790px;
     margin: 0 auto;
-    // border: 2px solid green;
     padding: 0 2px;
 }
 
@@ -101,9 +88,6 @@ img {
 }
 
 @media (max-width: #{$mobile}){
-    // .wrapper {
-    //     max-width: calc(100% - 8px);
-    // }
      h1, h2, h3 {
         font-size: .7rem;
     }
