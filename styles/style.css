@@ -638,25 +638,6 @@ img {
   }
 }
 
-@media (max-width: 500px) {
-  #nav-bar {
-    border: 3px solid purple;
-    max-width: 95% !important;
-  }
-  #navigation-menu li {
-    margin: 0;
-  }
-  #burger-menu {
-    border: 2px solid yellow;
-  }
-  .nav-social {
-    border: 2px solid yellow;
-  }
-  .nav-social i {
-    border: 2px solid pink;
-  }
-}
-
 #reveal-placeholder {
   height: 70vh;
   background: #18181e;
@@ -692,7 +673,6 @@ img {
 .pic-overlay {
   padding: 20px;
   width: 100%;
-  max-width: 100% !important;
   height: 100%;
   background: rgba(24, 24, 30, 0.8);
   opacity: 0;
@@ -702,14 +682,9 @@ img {
   color: #dec79b;
 }
 
-.overlay-lyrics {
-  border: 2px solid blue;
-}
-
 .pic-overlay {
   text-align: center;
   padding: 60px 20px;
-  border: 2px solid pink;
 }
 
 .pic-overlay:hover {
@@ -722,7 +697,6 @@ img {
 
 .listen {
   display: block;
-  border: 2px solid red;
   width: 100%;
 }
 
@@ -771,17 +745,11 @@ img {
     text-align: center;
     padding: 20px;
   }
-  #album-container {
-    max-width: 100% !important;
-    border: 3px solid purple;
-  }
 }
 
 @media (max-width: 500px) {
   #table .cell {
     width: 100%;
-    max-width: 100% !important;
-    border: 2px solid cornflowerblue;
     height: 20%;
     padding: 0;
     margin: 0;
