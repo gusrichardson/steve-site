@@ -373,6 +373,7 @@ i {
   width: 790px;
   margin: 0 auto;
   padding: 0 2px;
+  border: 10px solid red;
 }
 
 img {
@@ -835,6 +836,82 @@ footer {
 @media (max-width: 500px) {
   footer h2 {
     font-size: 1rem;
+  }
+}
+
+#art-body {
+  position: relative;
+  height: 100%;
+  border: 4px solid blue;
+  background-image: url(../../art-images/tele-background.jpg);
+  padding-bottom: 200px;
+}
+
+#art-main {
+  position: relative;
+  padding-top: 80px;
+  border: 4px solid pink;
+  height: 100%;
+  display: block;
+}
+
+#art-main h1 {
+  color: #18181e;
+  font-size: 3rem;
+}
+
+#art-gallery {
+  margin-top: 10px;
+  border: 4px solid red;
+  height: 100%;
+}
+
+#art-gallery div {
+  height: 200px;
+  display: inline-block;
+  border: 4px solid green;
+}
+
+.art-img-container {
+  height: 200px !important;
+  overflow: hidden;
+  position: relative;
+  width: 32%;
+  float: left;
+  margin: 2px;
+  overflow: hidden;
+}
+
+.art-img-container img {
+  min-width: 100%;
+  height: auto;
+}
+
+#art-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+}
+
+#art-overlay img {
+  width: 500px;
+  height: auto;
+  max-height: calc(100vh - 160px);
+  margin: 80px auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+@media (max-width: 800px) {
+  .art-img-container {
+    width: 49%;
   }
 }
 /*# sourceMappingURL=style.css.map */

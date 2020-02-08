@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Art Gallery</title>
+    <link href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <style>
+       article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,summary{display:block;}audio,canvas,video{display:inline-block;}audio:not([controls]){display:none;height:0;}[hidden]{display:none;}html{font-family:sans-serif;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;}a:focus{outline:thin dotted;}a:active,a:hover{outline:0;}h1{font-size:2em;}abbr[title]{border-bottom:1px dotted;}b,strong{font-weight:700;}dfn{font-style:italic;}mark{background:#ff0;color:#000;}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em;}pre{white-space:pre-wrap;word-wrap:break-word;}q{quotes:\201C \201D \2018 \2019;}small{font-size:80%;}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline;}sup{top:-.5em;}sub{bottom:-.25em;}img{border:0;}svg:not(:root){overflow:hidden;}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em;}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0;}button,input{line-height:normal;}button,html input[type=button],/* 1 */input[type=reset],input[type=submit]{-webkit-appearance:button;cursor:pointer;}button[disabled],input[disabled]{cursor:default;}input[type=checkbox],input[type=radio]{box-sizing:border-box;padding:0;}input[type=search]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration{-webkit-appearance:none;}textarea{overflow:auto;vertical-align:top;}table{border-collapse:collapse;border-spacing:0;}body,figure{margin:0;}legend,button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0;}
+       
+       .clearfix:after {visibility: hidden; display: block; font-size: 0; content: ''; clear: both; height: 0; }
+       
+       * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+        body {
+            /* border: 4px solid purple; */
+            position: relative;
+            padding-bottom: 80px;
+            margin: 0;
+            background-image: url(../../art-images/tele-background.jpg);
+        }
+        h1 {
+            font-family: 'Permanent Marker', cursive;
+            font-size: 3rem;
+            margin: 0;
+            padding: 0;
+             color: #18181e;
+        }
+        a {
+            font-family: 'Permanent Marker', cursive;
+            /* border: 1px solid red; */
+            position: absolute;
+            bottom: 0px;
+            right: 20px;
+            font-size: 1.5rem;
+            color: #18181e;
+        }
+        header {
+            width: 790px;
+            margin: 0 auto;
+            padding: 60px 40px 0px;
+            display: flex;
+            justify-content: space-between;
+            /* border: 1px solid blue; */
+            position: relative;
+        }
+
+        #art-list {
+            margin: 5px 0 0;
+        }
+        #art-gallery {
+            width: 790px;
+            /* border: 4px solid blue; */
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-around;
+        }
+        
+        .art-img-container {
+            list-style: none;
+            width: 32%;
+            display: inline-block;
+            height: 150px !important;
+            /* border: 2px solid red; */
+            overflow: hidden;
+        }
+        .art-img-container img {
+            display: block;
+            width: 100%;
+            height: auto;
+        }
+
+        #art-overlay {
+            background: rgba(3, 3, 3, 0.7);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: none;
+        }
+
+        #art-overlay img {
+            width: 500px;
+            height: auto;
+            margin-left: 50%;
+            transform: translateX(-50%);
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Scribbles</h1>
+        <a href="index.html" aria-label="back to main page">Back</a>
+    </header>
+    <main>
+        <div id="art-gallery">
+            <ul id="art-list">
+            <li class="art-img-container"><img class="art-image" src="/art-images/comic-strip.jpeg" alt=""></li>
+            <li class="art-img-container"><img class="art-image" src="/art-images/big-d.jpeg" alt=""></li>
+            <li class="art-img-container"><img class="art-image" src="/art-images/nightmare.jpeg" alt=""></li>
+            <li class="art-img-container"><img class="art-image" src="/art-images/joker-sketch.png" alt=""></li>
+            <li class="art-img-container"><img class="art-image" src="/art-images/king.jpeg" alt=""></li>
+            <li class="art-img-container"><img class="art-image" src="/art-images/light-and-dark.jpeg" alt="">
+            </li>
+            <li class="art-img-container"><img class="art-image" src="/art-images/lady-poem.jpeg" alt=""></li>
+            <li class="art-img-container"><img class="art-image" src="/art-images/pics-floor.jpeg" alt=""></li>
+            <li class="art-img-container"><img class="art-image" src="/art-images/joker-terminator.jpeg" alt="">
+            </li>
+            <li class="art-img-container"><img class="art-image" src="/art-images/ooc-cult.jpeg" alt=""></li>
+            <li class="art-img-container"><img class="art-image" src="/art-images/pigs-platter.jpeg" alt=""></li>
+            <li class="art-img-container"><img class="art-image" src="/art-images/hoppy.jpeg" alt="">
+            </li>
+            <li class="art-img-container"><img class="art-image" src="/art-images/framed-pic.jpeg" alt=""></li>
+            <li class="art-img-container"><img class="art-image" src="/art-images/laptop.jpeg" alt=""></li>
+            <li class="art-img-container"><img class="art-image" src="/art-images/panda-snake.jpeg" alt="">
+            </li>
+            <li class="art-img-container"><img class="art-image" src="/art-images/falling.jpeg" alt=""></li>
+            <li class="art-img-container"><img class="art-image" src="/art-images/jamstack-skins.jpeg" alt=""></li>
+            <li class="art-img-container"><img class="art-image" src="/art-images/dark-knight.jpeg" alt="">
+            </li>
+            <li class="art-img-container"><img class="art-image" src="/art-images/hops-beer-can.jpeg" alt=""></li>
+            <li class="art-img-container"><img class="art-image" src="/art-images/robot.jpeg" alt=""></li>
+            <li class="art-img-container"><img class="art-image" src="/art-images/money-skull.jpeg" alt="">
+            </li>
+            <li class="art-img-container"><img class="art-image" src="/art-images/drunk-doll.jpeg" alt=""></li>
+            <li class="art-img-container"><img class="art-image" src="/art-images/toaster-struders.jpeg" alt="">
+            </li>
+            <li class="art-img-container"><img class="art-image" src="/art-images/jamstack.jpeg" alt="">
+            </li>
+            </ul>
+        </div>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            const $artOverlay = $("<div id='art-overlay'></div>");
+            const $artImg = $("<img>")
+            const $imgOffset = $artImg.offset().top;
+
+            $artOverlay.append($artImg);
+
+            $('body').append($artOverlay);
+
+            $('.art-image').click(function () {
+                let $imgSrc = $(this).attr('src');
+                let $imgPos = $(this).offset().top/1.5;
+                $artImg.attr('src', $imgSrc).css({'margin-top': $imgPos});
+                let $artHeight = $artImg.height();
+                $artOverlay.css({'display': 'block'});
+            })
+            $artOverlay.click(function () {
+                $artOverlay.css({'display': 'none'});
+            })
+        })
+    </script>
+</body>
+</html>
