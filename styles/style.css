@@ -838,6 +838,10 @@ img {
   color: #f8f8ff;
 }
 
+#contact-scribbles-link {
+  color: #dec79b;
+}
+
 @media (max-width: 500px) {
   #contact-logo {
     width: 300px;

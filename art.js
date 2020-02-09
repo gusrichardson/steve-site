@@ -12,6 +12,8 @@ $(document).ready(function () {
         let $documentHeight = $(document).height();
         console.log("this is $documentHeight", $documentHeight);
         let $windowHeight = $(window).height();
+        // let $windowTop = $(window).position();
+        // console.log("this is the windowTop", $windowTop);
         console.log("this is the window height", $windowHeight);
         let $imgPos = $(this).offset().top
         console.log("this is the $imgPos", $imgPos);
