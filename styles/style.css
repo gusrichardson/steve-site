@@ -650,6 +650,12 @@ img {
   li a {
     background: none;
   }
+  #scribbles-link a {
+    background: none;
+  }
+  #scribbles-link:hover a {
+    color: #f8f8ff;
+  }
 }
 
 @media (min-width: 801px) {
