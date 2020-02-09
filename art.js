@@ -1,22 +1,20 @@
 $(document).ready(function () {
-    console.log('ready');
+    const $artOverlay = $("<div id='art-overlay'></div>");
+    const $artImg = $("<img>")
+    const $imgOffset = $artImg.offset().top;
 
-    const $artOverlay = $(`<div id="art-overlay"></div>`);
-    const $artImage = $("<img>")
-    $artOverlay.append($artImage);
+    $artOverlay.append($artImg);
 
-    $("#art-main").append($artOverlay);
+    $('body').append($artOverlay);
 
     $('.art-image').click(function () {
-        let $imagePath = $(this).attr('src');
-        console.log($imagePath);
-        $artImage.attr('src', $imagePath);
-        console.log($artImage);
-        $('#art-overlay').show();
+        let $imgSrc = $(this).attr('src');
+        let $imgPos = $(this).offset().top / 1.5;
+        $artImg.attr('src', $imgSrc).css({ 'margin-top': $imgPos });
+        let $artHeight = $artImg.height();
+        $artOverlay.css({ 'display': 'block' });
     })
-
-    $('#art-overlay').click(function () {
-        $('#art-overlay').hide();
+    $artOverlay.click(function () {
+        $artOverlay.css({ 'display': 'none' });
     })
-});
-
+})

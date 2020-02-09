@@ -11,12 +11,42 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
     border-bottom: 2px solid $white;
 }
 
+#scribbles-link a {
+    color: $highlight;
+      background: linear-gradient(
+       to bottom, $white  0%,
+       $white 100%
+     );
+        background-position: 0% 100%;
+     //the background is 4px wide and 4px tall
+     background-size: 2px 4px;
+     //background-repeats till the end;
+     background-repeat: repeat-x;
+     transition: all .2s;
+}
+
+#scribbles-link:hover a {
+    background-size: 2px 60px;
+    color: $black;
+}
+
+
+
 #nav-bar li {
     display: inline-block;
 }
 
-#navigation-menu, .nav-social {
-    width: 50%;
+// #navigation-menu, .nav-social {
+//     width: 50%;
+// }
+
+.nav-social {
+    width: 200px;
+    // border: 2px solid green;
+}
+
+#navigation-menu {
+    width: calc(100% - 200px);
 }
 
 #navigation-menu {
@@ -28,6 +58,18 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 #navigation-menu li {
     margin: 0 10px;
 }
+
+///DELETE
+// #nav-bar {
+//     border: 2px solid red;
+// }
+
+// #navigation-menu {
+//     border: 2px solid pink;
+// }
+
+//DELETE
+
 
 .nav-social {
     text-align: right;
